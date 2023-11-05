@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chauffeur Backoffice</title>
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #b1fa07;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #b1fa07; /* Lighter green color */
+        }
+        h1 {
+            color: white; /* Change the color of the h1 heading to white */
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #b1fa07; /* Lighter green color */
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: green;
+            color: black;
+        }
+        a {
+            text-decoration: none;
+            color: #b1fa07; /* Lighter green color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Chauffeur Management</h1>
+    </header>
+    <h2>Chauffeur List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Ride Type</th>
+            <th>Working State</th>
+            <th>Total Earnings</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Nour</td>
+            <td>romdhani@email.com | 25636789</td>
+            <td>comfort</td>
+            <td>Tunis</td>
+            <td>500DT</td>
+            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+        </tr>
+        <!-- Add more chauffeur entries as table rows -->
+    </table>
+
+    <h2>Add New Chauffeur</h2>
+    <form>
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact">
+        </p>
+        <p>
+            <label for="rideType">Ride Type:</label>
+            <select id="rideType" name="rideType">
+                <option value="Comfort">Comfort</option>
+                <option value="Standard">Standard</option>
+            </select>
+        </p>
+        <p>
+            <label for="workingState">Working State:</label>
+            <select id="workingState" name="workingState">
+                <option value="state1">Tunis</option>
+                <option value="state2">Ariana</option>
+                <option value="state3">Ben Arous</option>
+                <option value="state4">Manouba</option>
+                <option value="state5">Nabeul</option>
+                <option value="state6">Zaghouan</option>
+                <option value="state7">Bizerte</option>
+                <option value="state8">Béja</option>
+                <option value="state9">Jendouba</option>
+                <option value="state10">Le Kef</option>
+                <option value="state11">Siliana</option>
+                <option value="state12">Kairouan</option>
+                <option value="state13">Kasserine</option>
+                <option value="state14">Sidi Bouzid</option>
+                <option value="state15">Sousse</option>
+                <option value="state16">Monastir</option>
+                <option value="state17">Mahdia</option>
+                <option value="state18">Sfax</option>
+                <option value="state19">Gafsa</option>
+                <option value="state20">Tozeur</option>
+                <option value="state21">Kebili</option>
+                <option value="state22">Tataouine</option>
+                <option value="state23">Medenine</option>
+                <option value="state24">Gabès</option>
+            </select>
+        </p>
+        <p>
+            <label for="earnings">Total Earnings:</label>
+            <input type="text" id="earnings" name="earnings">
+        </p>
+        <button>Add Chauffeur</button>
+    </form>
+</body>
+</html>

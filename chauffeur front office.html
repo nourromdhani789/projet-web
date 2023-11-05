@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chauffeur Front Office</title>
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #b1fa07;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+    }
+    nav a:hover {
+            color: orange; /* Change the color to orange on hover */
+        }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 0.1rem;
+        position: move;
+        bottom: 0;
+        width: 99.8%;
+    }
+        h1, h2 {
+            color: #b1fa07; /* Lighter green color */
+        }
+        h1 {
+            color: white; /* Change the color of the h1 heading to white */
+            text-align: center;
+        }
+        img {
+            max-width: 100px;
+            border: 2px solid green;
+            border-radius: 50%;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            border: 1px solid green;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        ul li button {
+            background-color: green;
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        ul li button:hover {
+            background-color: black;
+            color: green;
+        }
+        select, input[type="password"], input[type="email"] {
+            background-color: black;
+            color: white;
+            border: 1px solid green;
+            padding: 5px;
+        }
+        select option {
+            background-color: black;
+        }
+        button {
+            background-color: green;
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: black;
+            color: green;
+        }
+        a {
+            text-decoration: none;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, Chauffeur Name</h1>
+    </header>
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#Accept">Accepted Ride Requests</a>
+        <a href="#RidePre">Ride Preferences</a>
+        <a href="#WorkingState">Working State</a>
+        <a href="#RideHis">Ride History and Earnings</a>
+        <a href="#Messages">Messages and Notifications</a>
+        <a href="#AccountSett">Account Settings</a>
+        <a href="#Help">Help and Support</a>
+        <a href="#Logout">Logout</a>
+
+        <!-- Add other navigation links as needed -->
+    </nav>
+    <section id="profile">
+    <h2>Profile Information</h2>
+    <p>
+        <strong>Name:</strong> Nour<br>
+        <strong>Contact:</strong> romdhani@email.com | 25636789
+    </p>
+    <img src="./images.jpeg" alt="Chauffeur Profile Picture">
+    </section>
+    <section id="Accept">
+    <h2>Accept Ride Requests</h2>
+    <ul>
+        <li>
+            <strong>Pickup Location:</strong> 123 Main Street
+            <br>
+            <strong>Drop-off Location:</strong> 456 Elm Avenue
+            <br>
+            <strong>Requested Time:</strong> 10:00 AM
+            <br>
+            <button>Accept</button>
+        </li>
+        <!-- Add more ride requests as list items -->
+    </ul>
+    </section>
+    <section id="RidePre">
+    <h2>Ride Preferences</h2>
+    <p>
+        <strong>Ride Type:</strong>
+        <select>
+            <option value="comfort">comfort</option>
+            <option value="standard">standard</option>
+            
+        </select>
+    </p>
+    </section>
+    <section id="WorkingState">
+    <p>
+        <strong>Working State:</strong>
+        <select>
+            <option value="state1">Tunis</option>
+            <option value="state2">Ariana</option>
+            <option value="state3">Ben Arous</option>
+            <option value="state4">Manouba</option>
+            <option value="state5">Nabeul</option>
+            <option value="state6">Zaghouan</option>
+            <option value="state7">Bizerte</option>
+            <option value="state8">Béja</option>
+            <option value="state9">Jendouba</option>
+            <option value="state10">Le Kef</option>
+            <option value="state11">Siliana</option>
+            <option value="state12">Kairouan</option>
+            <option value="state13">Kasserine</option>
+            <option value="state14">Sidi Bouzid</option>
+            <option value="state15">Sousse</option>
+            <option value="state16">Monastir</option>
+            <option value="state17">Mahdia</option>
+            <option value="state18">Sfax</option>
+            <option value="state19">Gafsa</option>
+            <option value="state20">Tozeur</option>
+            <option value="state21">Kebili</option>
+            <option value="state22">Tataouine</option>
+            <option value="state23">Medenine</option>
+            <option value="state24">Gabès</option>
+        </select>
+    </p>
+    </section>
+
+    <section id="RideHis">
+    <h2>Ride History and Earnings</h2>
+    <p>
+        <strong>Total Earnings:</strong> 500DT
+    </p>
+    <ul>
+        <li>
+            <strong>Date:</strong> January 1, 2023
+            <br>
+            <strong>Location:</strong> 123 Main Street to 456 Elm Avenue
+            <br>
+            <strong>Earnings:</strong> 20DT
+        </li>
+        <!-- Add more ride history entries as list items -->
+    </ul>
+    </section>
+    <section id="Messages">
+    <h2>Messages and Notifications</h2>
+    <ul>
+        <li>
+            <strong>From Admin:</strong> New ride request available.
+        </li>
+        <!-- Add more messages and notifications as list items -->
+    </ul>
+    </section>
+    <section id="AccountSett">
+    <h2>Account Settings</h2>
+    <form>
+        <p>
+            <label for="password">Change Password:</label>
+            <input type="password" id="password" name="password">
+        </p>
+        <p>
+            <label for="email">Update Email:</label>
+            <input type="email" id="email" name="email">
+        </p>
+        <button>Save Changes</button>
+    </form>
+    </section>
+    <section id="help">
+    <h2>Help and Support</h2>
+    <p>If you need assistance, contact our support team at support@example.com.</p>
+    </section>
+    <section id="Logout">
+    <h2>Logout</h2>
+    <p><a href="#"><button>Logout</button></a></p>
+    </section>
+    <footer> <p>&copy; 2023 Online chauffeur Portal</p></footer>
+</body>
+</html>
